@@ -1,0 +1,4 @@
+*   @PartORG
+*.js    @PartORG
+*.yml   @PartORG
+/public/    @PartORG   
