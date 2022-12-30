@@ -62,4 +62,4 @@ echo "::endgroup::\n";
 if(!$response->success) {
     echo $response->body;
     exit(1)
-};
+}
