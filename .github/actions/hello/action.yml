@@ -10,5 +10,5 @@ inputs:
     time:
       description: 'The greeting time'
   runs:
-    using: 'node16'
+    using: 'node12'
     main: 'dist/index.js'  # this file will run when action is activated.
