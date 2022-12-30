@@ -15,7 +15,7 @@ try {
         ...github.context.repo,
         title,
         body,
-        assignees: assignees ? assignees.split('\n') : undefined
+        assignees: [assignees]
     });
 
     core.setOutput('issue', JSON.stringify(response.data));

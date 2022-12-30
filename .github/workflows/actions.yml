@@ -12,9 +12,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           title: Title
           body: Body
-          assignees: | 
-            PartORG
-            testUser
+          assignees: PartORG
       - run: |
           echo ${{ steps.issue.outputs.issue }}
       - uses: ./.github/actions/hello
