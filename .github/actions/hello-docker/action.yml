@@ -1,0 +1,17 @@
+name: Hello World
+author: Ievgen Perederieiev
+description: Simple action on JavaScript to understand how to create a privat Actions.
+inputs:
+  who-to-greet:
+    description: 'Who to greet'
+    required: true
+    default: PartORG
+  outputs:
+    time:
+      description: 'The greeting time'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'  # this file will run when action is activated.
+  # entrypoint: 
+  args:
+    - ${{ inputs.who-to-greet }}
