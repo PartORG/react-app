@@ -9693,10 +9693,11 @@ try {
     const body = core.getInput('body');
     const assignees = core.getInput('assignees');
 
-    console.log(token);
-
     const octokit = new github.getOctokit(token);
-    const response = octokit.issues.create({
+    
+    console.log(JSON.stringify(octokit, null));
+
+    const response = octokit.rest.issues.create({
         // owner: github.context.repo.owner,
         // repo: github.context.repo.repo,
         ...github.context.repo,
