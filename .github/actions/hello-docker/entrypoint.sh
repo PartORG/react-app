@@ -16,4 +16,4 @@ echo 'SOME STUFF'
 echo 'SOME STUFF'
 echo "::endgroup::"
 
-echo "::set-env name=HELLO::hello"
+# echo "::set-env name=HELLO::hello"   # NOT SECURE
