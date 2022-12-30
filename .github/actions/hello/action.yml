@@ -9,6 +9,6 @@ inputs:
   outputs:
     time:
       description: 'The greeting time'
-  runs:
-    using: 'node12'
-    main: 'dist/index.js'  # this file will run when action is activated.
+runs:
+  using: 'node12'
+  main: 'dist/index.js'  # this file will run when action is activated.
